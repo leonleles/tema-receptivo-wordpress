@@ -1,0 +1,65 @@
+.component-banners {
+    width: 100%;
+    height: 500px;
+}
+
+.component-banners .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.component-banners .swiper-container .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.component-banners .swiper-container .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.component-banners .swiper-container .swiper-pagination {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 100;
+    display: flex;
+}
+
+.component-banners .swiper-container .swiper-pagination .page {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: 0.2s;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.component-banners .swiper-container .swiper-pagination .page:last-child {
+    margin-right: 0;
+}
+
+.component-banners .swiper-container .swiper-pagination .page.swiper-pagination-bullet-active, .component-banners .swiper-container .swiper-pagination .page:hover {
+    color: #fff;
+    background: blue;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
