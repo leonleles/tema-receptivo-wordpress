@@ -1,10 +1,6 @@
 <?php
 /**
-* Sets settings for general fields
-*
-* @since  Travelbiz 1.0.0
-* @param  array $settings
-* @return array Merged array
+* Configurações de cada sessão
 */
 
 function Customizer_General_Settings( $settings ){

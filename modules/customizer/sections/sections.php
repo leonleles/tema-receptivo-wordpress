@@ -1,10 +1,6 @@
 <?php
 /**
-* Sets sections for Travelbiz_Customizer
-*
-* @since  Travelbiz 1.0.0
-* @param  array $sections
-* @return array Merged array
+ * Sessões do Customize
 */
 function Customizer_Sections( $sections ){
 
