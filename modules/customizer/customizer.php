@@ -103,7 +103,7 @@ if (!class_exists('NucleoWeb_Customizer')):
 
             $args = array();
 
-            $args[ 'default' ] = '';
+            $args['default'] = '';
 
             if (isset($field['setting_type']) || !empty($field['setting_type'])) {
                 $args['type'] = $field['setting_type'];
@@ -265,8 +265,20 @@ if (!class_exists('NucleoWeb_Customizer')):
                     break;
             }
         }
+
+        public function get($id) {
+            return get_theme_mod($id);
+        }
     }
 
 endif;
+
+if (!function_exists('nucleoweb_get_option')) {
+
+    function nucleoweb_get_option($id) {
+        return NucleoWeb_Customizer::get_instance()->get($id);
+    }
+
+}
 
 add_action('customize_register', array(NucleoWeb_Customizer::get_instance(), 'register'));
