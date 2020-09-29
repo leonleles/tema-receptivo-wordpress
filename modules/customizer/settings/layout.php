@@ -11,11 +11,26 @@ class Layout {
     public function settings_vars($settings) {
 
         $general = array(
-            'widget_banners' => array(
-                'label' => 'Teste',
-                'section' => 'section_banners',
+            'layout_header' => array(
+                'label' => 'Modelo Header',
+                'section' => 'section_layout_header',
                 'type' => 'select',
-                'choices' => []
+                'default'=> 'green',
+                'choices' => ['blue' => 'blue' , 'darkviolet' => 'darkviolet' , 'green' => 'green']
+            ),
+            'layout_footer' => array(
+                'label' => 'Modelo Footer',
+                'section' => 'section_layout_footer',
+                'type' => 'select',
+                'default'=> 'green',
+                'choices' => ['blue' => 'blue' , 'darkviolet' => 'darkviolet' , 'green' => 'green']
+            ),
+            'layout_front' => array(
+                'label' => 'Modelo Home',
+                'section' => 'section_layout_front',
+                'type' => 'select',
+                'default'=> 'green',
+                'choices' => ['blue' => 'blue' , 'darkviolet' => 'darkviolet' , 'green' => 'green']
             ),
         );
 

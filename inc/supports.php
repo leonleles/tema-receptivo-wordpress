@@ -15,7 +15,6 @@ add_action('after_setup_theme', function () {
     ));
 
     add_theme_support('custom-header', array(
-        'default-image' => get_parent_theme_file_uri('/assets/images/travelbiz-banner-1920-380.jpg'),
         'width' => 500,
         'height' => 500,
         'flex-height' => true,

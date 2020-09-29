@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="display: flex; flex-direction: column">
 
-<header>HEADER</header>
+<?php get_template_part('template-parts/header/header', get_theme_mod('layout_header', 'green')); ?>
 <main>

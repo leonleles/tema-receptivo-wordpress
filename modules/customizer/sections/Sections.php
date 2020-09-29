@@ -11,9 +11,16 @@ class Sections {
     public function sections_vars( $sections ){
 
         $travelbiz_sections = array(
-            # Section for Font panel
-            'section_banners' => array(
-                'title' => 'Banners',
+            'section_layout_header' => array(
+                'title' => 'Header',
+                'panel' => 'panel_layout'
+            ),
+            'section_layout_front' => array(
+                'title' => 'Home',
+                'panel' => 'panel_layout'
+            ),
+            'section_layout_footer' => array(
+                'title' => 'Footer',
                 'panel' => 'panel_layout'
             ),
         );

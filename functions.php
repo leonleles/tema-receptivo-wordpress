@@ -22,3 +22,9 @@ function nucleoweb_is_active_footer_sidebar(){
     }
     return false;
 }
+
+
+#TODO apagar tudo abaixo
+
+wp_register_style('style-inline', get_template_directory_uri() . '/assets/css/default/inline-classes.css', array(), '', 'all');
+wp_enqueue_style('style-inline');

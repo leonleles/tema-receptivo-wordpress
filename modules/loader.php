@@ -6,6 +6,7 @@ use NW_Sections\Sections;
 
 require __DIR__ . '/customizer/NucleoWeb_Customizer.php';
 require_once __DIR__ . '/widgets/banners.php';
+require_once __DIR__ . '/widgets/facebook.php';
 
 /**
  * Load configs customize
@@ -22,6 +23,7 @@ function nucleoweb_register_widget() {
 
     $widgets = array(
         'NW_Widget_Banners',
+        'NW_Widget_Facebook',
     );
 
     foreach ($widgets as $key => $value) {
