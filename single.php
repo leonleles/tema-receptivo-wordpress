@@ -2,10 +2,10 @@
 
 get_header();
 
-
+if (is_active_sidebar('conteudo-single')) :
+    dynamic_sidebar('conteudo-single');
+endif;
 the_post();
 the_content();
-if (is_active_sidebar('conteudo-blue')) :
-    dynamic_sidebar('conteudo-blue');
-endif;
+
 get_footer();
