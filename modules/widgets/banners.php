@@ -11,6 +11,7 @@ class NW_Widget_Banners extends WP_Widget {
 
     function widget($args, $instance) { ?>
         <div class="component-banners">
+            <h1><?= $instance['title'] ?></h1>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background: red"></div>

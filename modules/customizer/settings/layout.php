@@ -1,19 +1,24 @@
 <?php
-/**
-* Configurações de cada sessão
-*/
 
-function Customizer_General_Settings( $settings ){
+namespace NW_Settings;
 
-	$general = array(
-        'widget_banners' => array(
-            'label'     => 'Teste',
-            'section'   => 'section_banners',
-            'type'      => 'select',
-            'choices'   => []
-        ),
-	);
+class Layout {
 
-	return array_merge( $settings, $general );
+    public function __construct() {
+        add_filter('nucleoweb_general_settings', [$this, 'settings_vars']);
+    }
+
+    public function settings_vars($settings) {
+
+        $general = array(
+            'widget_banners' => array(
+                'label' => 'Teste',
+                'section' => 'section_banners',
+                'type' => 'select',
+                'choices' => []
+            ),
+        );
+
+        return array_merge($settings, $general);
+    }
 }
-add_filter( 'nucleoweb_general_settings', 'Customizer_General_Settings' );

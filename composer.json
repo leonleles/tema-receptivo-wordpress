@@ -1,0 +1,22 @@
+{
+  "name": "root/project",
+  "config": {
+    "optimize-autoloader": true
+  },
+  "authors": [
+    {
+      "name": "NucleoGov",
+      "email": "suporte@nucleo.site"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "NW_Panels\\": "modules/customizer/panels/",
+      "NW_Sections\\": "modules/customizer/sections/",
+      "NW_Settings\\": "modules/customizer/settings/",
+      "NW_Customizer\\": "modules/customizer/",
+      "NW_Widgets\\": "modules/customizer/widgets/"
+    }
+  }
+}

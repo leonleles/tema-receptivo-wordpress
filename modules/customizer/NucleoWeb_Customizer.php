@@ -124,14 +124,6 @@ if (!class_exists('NucleoWeb_Customizer')):
             $this->customize->add_setting($field['id'], $args);
         }
 
-        /**
-         * adds Customizer's control.
-         *
-         * @return void
-         * @link   https://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_control
-         * @since  Travelbiz 1.0.0
-         * @access protected
-         */
         protected function add_control($field) {
 
             $args = array();
