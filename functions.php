@@ -9,7 +9,7 @@ define('WP_DEBUG', true);
 
 require_once __DIR__ . '/inc/setup.php';
 require_once __DIR__ . '/inc/supports.php';
-require_once __DIR__ . '/modules/loader.php';
+require_once __DIR__ . '/modules/modules.php';
 
 show_admin_bar(false);
 
