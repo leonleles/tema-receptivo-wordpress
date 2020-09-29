@@ -214,36 +214,6 @@ if (!class_exists('NucleoWeb_Customizer')):
 
                     break;
 
-                case 'radio-image':
-
-                    $this->customize->add_control(new Travelbiz_Customize_Control_Radio_Image(
-                        $this->customize,
-                        $control_id,
-                        $args
-                    ));
-
-                    break;
-
-                case 'dropdown-categories':
-
-                    $this->customize->add_control(new Travelbiz_Customize_Category_Control(
-                        $this->customize,
-                        $control_id,
-                        $args
-                    ));
-
-                    break;
-
-                case 'dropdown-posts':
-
-                    $this->customize->add_control(new Travelbiz_Customize_Post_Control(
-                        $this->customize,
-                        $control_id,
-                        $args
-                    ));
-
-                    break;
-
                 default:
 
                     if (isset($field['type']) && !empty($field['type'])) {

@@ -33,12 +33,6 @@ add_action('after_setup_theme', function () {
         'flex-width' => true,
     ));
 
-    add_theme_support('infinite-scroll', array(
-        'container' => '#main-wrap',
-        'footer_widgets' => true,
-        'render' => 'travelbiz_infinite_scroll_render',
-    ));
-
     add_theme_support('editor-color-palette', array(
         array(
             'name' => 'Tan',

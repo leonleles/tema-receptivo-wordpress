@@ -10,7 +10,7 @@ class Sections {
 
     public function sections_vars( $sections ){
 
-        $travelbiz_sections = array(
+        $nucleoweb_sections = array(
             'section_layout_header' => array(
                 'title' => 'Header',
                 'panel' => 'panel_layout'
@@ -25,6 +25,6 @@ class Sections {
             ),
         );
 
-        return array_merge( $travelbiz_sections, $sections );
+        return array_merge( $nucleoweb_sections, $sections );
     }
 }
