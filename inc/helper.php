@@ -19,12 +19,12 @@ function get_filter_customize_settings() {
 
 # Directory singular single
 function get_single_directory () {
-    return get_template_directory() . '/singular-pages/post';
+    return 'singular-pages/post/';
 }
 
 # Directory singular page
 function get_page_directory () {
-    return get_template_directory() . '/singular-pages/page';
+    return 'singular-pages/page/';
 }
 
 # Directory singular

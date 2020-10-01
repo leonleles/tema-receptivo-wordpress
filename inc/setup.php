@@ -5,15 +5,15 @@ show_admin_bar(false);
 
 function filter_page_template_hierarchies($templates = array()) {
     $templates = array_map(function ($page){
-        return get_page_directory() . '/' . $page;
+        return get_page_directory() . $page;
     }, $templates);
 
     return $templates;
 }
 
 function filter_single_template_hierarchies($templates = array()) {
-    $templates = array_map(function ($page){
-        return get_single_directory() . '/' . $page;
+    $templates = array_map(function ($single){
+        return get_single_directory() . $single;
     }, $templates);
 
     return $templates;
