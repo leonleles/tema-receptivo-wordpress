@@ -2,10 +2,10 @@
 
 namespace NW_Panels;
 
-class Panels {
+class panels {
 
     public function __construct() {
-        add_filter('nucleoweb_customize_panels', [$this, 'panels_vars']);
+        add_filter(get_filter_customize_panels(), [$this, 'panels_vars']);
     }
 
     public function panels_vars($panels) {

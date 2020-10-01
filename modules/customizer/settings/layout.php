@@ -2,10 +2,10 @@
 
 namespace NW_Settings;
 
-class Layout {
+class layout {
 
     public function __construct() {
-        add_filter('nucleoweb_general_settings', [$this, 'settings_vars']);
+        add_filter(get_filter_customize_settings(), [$this, 'settings_vars']);
     }
 
     public function settings_vars($settings) {

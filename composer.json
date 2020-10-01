@@ -15,8 +15,7 @@
       "NW_Panels\\": "modules/customizer/panels/",
       "NW_Sections\\": "modules/customizer/sections/",
       "NW_Settings\\": "modules/customizer/settings/",
-      "NW_Customizer\\": "modules/customizer/",
-      "NW_Widgets\\": "modules/customizer/widgets/"
+      "NW_Customizer\\": "modules/customizer/"
     }
   }
 }

@@ -1,20 +1,7 @@
 <?php
 
-use NW_Panels\Panels;
-use NW_Settings\Layout;
-use NW_Sections\Sections;
-
-require __DIR__ . '/customizer/NucleoWeb_Customizer.php';
 require_once __DIR__ . '/widgets/banners.php';
 require_once __DIR__ . '/widgets/facebook.php';
-
-/**
- * Load configs customize
- */
-
-new Panels();
-new Sections();
-new Layout();
 
 /**
  * Load all the widgets

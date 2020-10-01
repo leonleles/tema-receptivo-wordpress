@@ -1,11 +1,11 @@
 <?php
 
-namespace NW_Sections;
+namespace nw_sections;
 
-class Sections {
+class sections {
 
     public function __construct() {
-        add_filter('nucleoweb_customize_sections', [$this, 'sections_vars']);
+        add_filter(get_filter_customize_sections(), [$this, 'sections_vars']);
     }
 
     public function sections_vars( $sections ){
