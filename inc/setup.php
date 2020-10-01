@@ -1,44 +1,23 @@
 <?php
 
+## Hide admin bar
+show_admin_bar(false);
 
-function nucleoweb_widgets_init() {
+function filter_page_template_hierarchies($templates = array()) {
+    $templates = array_map(function ($page){
+        return get_page_directory() . '/' . $page;
+    }, $templates);
 
-    register_sidebar(array(
-        'name' => 'Conteudo green',
-        'id' => 'conteudo-green',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
-    ));
-
-    register_sidebar(array(
-        'name' => 'Conteudo blue',
-        'id' => 'conteudo-blue',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
-    ));
-
-    register_sidebar(array(
-        'name' => 'Sessão darkviolet',
-        'id' => 'conteudo-darkviolet',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
-    ));
-
-    register_sidebar(array(
-        'name' => 'Single',
-        'id' => 'conteudo-single',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
-    ));
-
+    return $templates;
 }
 
-add_action('widgets_init', 'nucleoweb_widgets_init');
+function filter_single_template_hierarchies($templates = array()) {
+    $templates = array_map(function ($page){
+        return get_single_directory() . '/' . $page;
+    }, $templates);
+
+    return $templates;
+}
+
+add_filter('page_template_hierarchy', 'filter_page_template_hierarchies');
+add_filter('single_template_hierarchy', 'filter_single_template_hierarchies');
