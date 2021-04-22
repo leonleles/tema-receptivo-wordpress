@@ -1,15 +1,10 @@
 <?php
 
-use NW_Customizer\class_customizer_register;
+require_once __DIR__ . '/customizer/class_customizer_register.php';
 
-use NW_Panels\panels;
-use NW_Settings\layout;
-use NW_Sections\sections;
-
-# Customizer objects
-new panels();
-new sections();
-new layout();
+require_once __DIR__ . '/customizer/panels/panels.php';
+require_once __DIR__ . '/customizer/sections/sections.php';
+require_once __DIR__ . '/customizer/settings/layout.php';
 
 # Register custom panels, sections and settings
 add_action('customize_register', array(class_customizer_register::get_instance(), 'register'));

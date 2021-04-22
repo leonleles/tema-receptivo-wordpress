@@ -1,7 +1,5 @@
 <?php
 
-namespace nw_sections;
-
 class sections {
 
     public function __construct() {

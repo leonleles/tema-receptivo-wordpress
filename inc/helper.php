@@ -4,17 +4,17 @@
 
 # Filter name of register panels
 function get_filter_customize_panels() {
-    return 'nucleoweb_customize_panels';
+    return 'wp_customize_panels';
 }
 
 # Filter name of register sections
 function get_filter_customize_sections() {
-    return 'nucleoweb_customize_sections';
+    return 'wp_customize_sections';
 }
 
 # Filter name of register sections
 function get_filter_customize_settings() {
-    return 'nucleoweb_general_settings';
+    return 'wp_general_settings';
 }
 
 # Directory singular single

@@ -1,7 +1,7 @@
 <?php
 
 
-function nucleoweb_sidebar_init() {
+function wp_handler_sidebar_init() {
 
     register_sidebar(array(
         'name' => 'Conteudo green',
@@ -41,4 +41,4 @@ function nucleoweb_sidebar_init() {
 
 }
 
-add_action('widgets_init', 'nucleoweb_sidebar_init');
+add_action('widgets_init', 'wp_handler_sidebar_init');

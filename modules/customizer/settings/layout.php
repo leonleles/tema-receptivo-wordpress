@@ -1,7 +1,5 @@
 <?php
 
-namespace NW_Settings;
-
 class layout {
 
     public function __construct() {

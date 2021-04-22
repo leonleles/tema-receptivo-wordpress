@@ -5,17 +5,8 @@
   },
   "authors": [
     {
-      "name": "NucleoGov",
-      "email": "suporte@nucleo.site"
+      "name": "Leonardo Leles",
+      "email": "leoleles9159@hotmail.com"
     }
-  ],
-  "require": {},
-  "autoload": {
-    "psr-4": {
-      "NW_Panels\\": "modules/customizer/panels/",
-      "NW_Sections\\": "modules/customizer/sections/",
-      "NW_Settings\\": "modules/customizer/settings/",
-      "NW_Customizer\\": "modules/customizer/"
-    }
-  }
+  ]
 }

@@ -6,7 +6,7 @@ require_once __DIR__ . '/widgets/facebook.php';
 /**
  * Load all the widgets
  */
-function nucleoweb_register_widget() {
+function wp_handler_register_widget() {
 
     $widgets = array(
         'NW_Widget_Banners',
@@ -18,4 +18,4 @@ function nucleoweb_register_widget() {
     }
 }
 
-add_action('widgets_init', 'nucleoweb_register_widget');
+add_action('widgets_init', 'wp_handler_register_widget');

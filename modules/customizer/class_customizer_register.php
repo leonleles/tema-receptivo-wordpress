@@ -1,7 +1,5 @@
 <?php
 
-namespace NW_Customizer;
-
 class class_customizer_register {
     protected static $instance = NULL;
     /**

@@ -1,7 +1,5 @@
 <?php
 
-namespace NW_Panels;
-
 class panels {
 
     public function __construct() {
